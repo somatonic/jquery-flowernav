@@ -11,11 +11,13 @@
  *
  */
 
+
 (function($){
 $.fn.flowernav = function( options ) { 
 
     var settings = {
-      'radius'         : 120
+      'radius'		: 120,
+	  'drag'		: false
     };
 
     return this.each( function() {        
@@ -39,9 +41,11 @@ $.fn.flowernav = function( options ) {
         $button.data('canopen', 1);
         $this.find('ul li').css({ opacity: 0});
 
-        $this.draggable({
-            start: function(event, ui) {  $button.data('canopen', 0); }
-        });
+        if(settings.drag){
+			$this.draggable({
+            	start: function(event, ui) {  $button.data('canopen', 0); }
+        	});
+		}
 
 
         $button.live('mouseup', function(e){

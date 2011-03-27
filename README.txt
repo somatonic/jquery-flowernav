@@ -4,6 +4,7 @@ Version b0.1
 
 Date Created: 29-03-2011 by Philipp Urlich
 
+Dpepends on: jQuery 1.4 and jQuery UI javascript libraries
 
 Description:
 
@@ -17,6 +18,9 @@ How to use:
 	$('#nav').flowernav();
 
 	// different settings
-	$('#nav').flowernav({'radius': 200});
+	$('#nav').flowernav({
+		'radius': 200,
+		'drag': true, // requires jquery ui plugin
+	});
 
 </script>
