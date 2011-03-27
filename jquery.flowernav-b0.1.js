@@ -1,4 +1,3 @@
-
 /*
  * flowernav jQuery plugin
  * version b0.1
