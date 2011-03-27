@@ -2,12 +2,10 @@
  * flowernav jQuery plugin
  * version b0.1
  *
- * Copyright (c) 2011 Philipp Urlich (soma.urlich.ch)
+ * Created 2011 by Philipp Urlich (soma.urlich.ch)
  *
- * Dual licensed under the MIT (MIT-LICENSE.txt) 
- * and GPL (GPL-LICENSE.txt) licenses.
  *
- * http://soma.urlich.ch
+ * github.com/somatonic/jquery-flowernav/
  *
  */
 
