@@ -11,7 +11,6 @@
  *
  */
 
-
 (function($){
 $.fn.flowernav = function( options ) { 
 
@@ -123,7 +122,6 @@ $.fn.flowernav = function( options ) {
 
 
         function move_circle(){
-            
             ite++;
             var it = ite/3;
             $this.find('ul li').each(function(i){
