@@ -140,6 +140,3 @@ $.fn.flowernav = function( options ) {
 };
 
 })( jQuery );
-
-
-$('#websites').flowernav({radius:120});
