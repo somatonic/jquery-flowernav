@@ -17,22 +17,22 @@ This full version release has various more new options and also callbacks. You c
 The HTML Markup:
 
 <nav id="flash">
-    <ul>
-		<!-- first level link will be used as button -->
-		<li><a href="#flash" class="my_button">Flash</a>
-			<!-- second level link will be used as childs -->
-			<ul>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/mdm_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/rentahost_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/spinoff_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/goatrance_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/sgc_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/avaloq_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/pkcity_th_1.jpg"/></a></li>
-				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/prounix_th_1.jpg"/></a></li>
-			</ul>
-		</li>
-    </ul>
+<ul>
+	<!-- first level link will be used as button -->
+	<li><a href="#flash" class="my_button">Flash</a>
+		<!-- second level link will be used as childs -->
+		<ul>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/mdm_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/rentahost_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/spinoff_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/goatrance_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/sgc_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/avaloq_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/pkcity_th_1.jpg"/></a></li>
+			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/prounix_th_1.jpg"/></a></li>
+		</ul>
+	</li>
+</ul>
 </nav>
 
 Applying the plugin:
