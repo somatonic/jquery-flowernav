@@ -9,7 +9,7 @@ http://jsfiddle.net/soma/fCEjk/embedded/result/
 
 Description:
 
-This plugin transforms an simple <ul> list into a carousel flower bubble type navigation. There can be several uses for this plugin. With the right CSS, additional JS functions or events you could use this as a fancy bubble navigation menu, or as a simple picture galerie navigation if you combine it with any avaiable Lightbox/Fancybox... plugin.
+This plugin transforms a simple <ul> list into a carousel flower bubble type navigation. There can be several uses for this plugin. With the right CSS, additional JS functions or events you could use this as a fancy bubble navigation menu, or as a simple picture galerie navigation if you combine it with any avaiable Lightbox/Fancybox... plugin.
 
 This full version release has various more new options and also callbacks. You can also set the easing for the opening and closing animation. For more infos look at the example below, and have a look at the demo page.
 
