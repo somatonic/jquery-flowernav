@@ -1,0 +1,96 @@
+
+
+/* flowernav basic styling ----- */
+
+nav { display:block; position:absolute; }
+nav img { border:none }
+
+nav ul { margin:0;list-style-type:none;}
+nav ul li { position:relative;}
+nav ul ul { margin:0;list-style-type:none;}
+
+nav ul ul li img{ width:100%; }
+
+
+/* visual styling ------- */
+
+nav ul ul li {
+	width:50px; height: 50px;
+	background-color:#345;
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 0px 5px #aaa;
+	box-shadow: 0px 0px 5px #aaa;
+	margin:0;
+	/* these are set by the plugin to maintain degradation
+	position:absolute;
+	top:0;left:0;
+	display:block;
+	*/
+}
+
+
+nav#webdesign { top:40%; left:50%; width:50px; height:50px; }
+nav#flash { top:30%; left:40%; width:50px; height:50px; }
+
+
+.navbutton{
+	position:absolute;
+	width:100px; height:100px; line-height: 100px;
+	top:-25px;left:-25px; /* needed offset for centering button to circle*/
+	color:#aaa;
+	text-align:center; 
+	background-color:#fff; 
+	cursor: move;
+	-moz-box-shadow: 1px 1px 12px rgba(0,0,0,.4);
+	-moz-border-radius: 50px;
+	-webkit-box-shadow: 1px 1px 12px rgba(0,0,0,.4);
+	-webkit-border-radius: 50px;
+	box-shadow: 1px 1px 12px rgba(0,0,0,.4);
+	border-radius: 50px; 
+	font-size:17px;
+}
+
+
+.navbutton:hover{
+	color: #400;
+	background-color:#fff;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+}
+
+
+#flash ul ul li {
+	width:85px; height: 64px;
+	background-color:#345;
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 0px 5px #aaa;
+	box-shadow: 0px 0px 5px #aaa;
+	margin:0;
+	/* these are set by the plugin to maintain degradation
+	position:absolute;
+	top:0;left:0;
+	display:block;
+	*/
+}
+#flash .my_button{
+	position:absolute;
+	width:64px; height:64px; line-height: 64px;
+	top:0;left:9px; /*needed for centering circle to button depending on widths/heights*/
+	color:#aaa;
+	text-align:center; 
+	background-color:#fff; 
+	cursor: move;
+	-moz-box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+	-moz-border-radius: 50px;
+	-webkit-box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+	-webkit-border-radius: 50px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+	border-radius: 50px;  
+}
+#flash .my_button:hover{
+	color: #400;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+}

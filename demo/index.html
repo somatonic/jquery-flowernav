@@ -1,82 +1,97 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>jQuery Flower Navigation Demo</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="jquery-ui-1.8.11.custom.min.js"></script>
-<script src="../jquery.flowernav-b0.1.js"></script>
-<style>
-body{background-color:#eada95}
-nav{ position:absolute; top:50%; left:50%; width:50px; height:50px;}
-nav ul {}
-nav ul li img{ width:100%;}
-nav ul li {
-    position:absolute;
-    top:0;left:0;
-    width:50px; height: 50px;
-    display:block;
-    background-color:#345;
-    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.5);
-    -webkit-box-shadow: 0px 0px 5px #aaa;
-    box-shadow: 0px 0px 5px #aaa;
-    
-}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>jQuery Flower Navigation - Demo</title>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="jquery-ui-1.8.11.custom.min.js"></script>
+	<script src="../jquery.flowernav-1.0.js"></script>
 
-img {border:none}
-.navbutton{
-    position:absolute; top:0;left:0; text-align:center; line-height: 100px;width:100px; height:100px; background-color:#fff; cursor: move;
-    -moz-box-shadow: 1px 1px 8px rgba(0,0,0,.5);
-    -moz-border-radius: 50px;
-    -webkit-box-shadow: 1px 1px 8px rgba(0,0,0,.5);
-    -webkit-border-radius: 50px;
-    box-shadow: 1px 1px 8px rgba(0,0,0,.5);
-    border-radius: 50px;
-    color:#444;
-    top:-25px;left:-25px;z-index:1001;
-}
-.navbutton:hover{
-    background-color:#fff; cursor: pointer;
-    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
-    -moz-border-radius: 50px;
-    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.5);
-    -webkit-border-radius: 50px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
-    border-radius: 50px;
-    color:#444;
-    
-}
-
-</style>
+	<link rel="stylesheet" href="flowernav.css"/>
+	<style>
+		/* for demo page , you might have your own */
+		body{ background-color:#eada95; font:normal 12px sans-serif; }
+		a,a:visited{text-decoration:none;}
+	</style>
+	
 </head>
 
 <body>
 
-<nav id="websites">
-    
+<div id="log"></div>
+
+<nav id="webdesign">
     <ul>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/mdm_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/rentahost_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/spinoff_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/goatrance_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/sgc_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/avaloq_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/pkcity_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/prounix_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/sgc_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/avaloq_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/pkcity_small.jpg"/></a></li>
-        <li><a href="#"><img src="http://soma.urlich.ch/_media/internet/prounix_small.jpg"/></a></li>
-        
+		<li><a href="#webdesign" class="navbutton">WebDesign</a>
+			<ul>
+				<li><a href="#1" title="Caption"><img src="http://soma.urlich.ch/_media/internet/mdm_small.jpg"/></a></li>
+				<li><a href="#2"><img src="http://soma.urlich.ch/_media/internet/rentahost_small.jpg"/></a></li>
+				<li><a href="#3"><img src="http://soma.urlich.ch/_media/internet/spinoff_small.jpg"/></a></li>
+				<li><a href="#4"><img src="http://soma.urlich.ch/_media/internet/goatrance_small.jpg"/></a></li>
+				<li><a href="#5"><img src="http://soma.urlich.ch/_media/internet/sgc_small.jpg"/></a></li>
+				<li><a href="#6"><img src="http://soma.urlich.ch/_media/internet/avaloq_small.jpg"/></a></li>
+				<li><a href="#7"><img src="http://soma.urlich.ch/_media/internet/pkcity_small.jpg"/></a></li>
+				<li><a href="#8"><img src="http://soma.urlich.ch/_media/internet/prounix_small.jpg"/></a></li>
+				<li><a href="#9"><img src="http://soma.urlich.ch/_media/internet/sgc_small.jpg"/></a></li>
+				<li><a href="#10"><img src="http://soma.urlich.ch/_media/internet/avaloq_small.jpg"/></a></li>
+				<li><a href="#11"><img src="http://soma.urlich.ch/_media/internet/pkcity_small.jpg"/></a></li>
+				<li><a href="#12"><img src="http://soma.urlich.ch/_media/internet/prounix_small.jpg"/></a></li>
+			</ul>
+		</li>
     </ul>
-    <a class="navbutton">Webdesign</a>
 </nav>
 
+<nav id="flash">
+    <ul>
+		<li><a href="#flash" class="my_button">Flash</a>
+			<ul>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/mdm_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/rentahost_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/spinoff_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/goatrance_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/sgc_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/avaloq_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/pkcity_th_1.jpg"/></a></li>
+				<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/prounix_th_1.jpg"/></a></li>
+			</ul>
+		</li>
+    </ul>
+</nav>
+
+
+
 <script>
-	$('#websites').flowernav({
-		radius	: 130,
-		drag : true // requires jquery ui plugin to function
+
+	$('#webdesign').flowernav({drag:true},function(){ $('#log').append('"#'+this.attr('id')+' initiated<br/>'); });
+	
+	$('#flash').flowernav({
+		radiusX			: 140, 		// radius of x axis in px, default: 110
+		radiusY			: 110,		// radius of y axis in px, default: 110
+		rotate			: true, 	// rotate items in a circle, default: true
+		direction		: 'ccw', 	// counter clockwise rotation, default: clockwise
+		speed			: 4, 		// speed inverse proportional 1 = fastest, default: 3
+		oSpeed			: 1000, 		// speed of opening animation in ms, default: 500
+		cSpeed			: 400,		// speed of closing animation in ms, default: 400
+		easingOpen		: 'easeOutBounce', // override default easing of opening animation, default '' (jquery internal default) others via jquery ui or easing plugin,
+		easingClose		: 'easeInBack', // override default easing of opening animation, default '' (jquery internal default) others via jquery ui easing plugin,
+		hoverStop		: true, 	// does stop the animation on item hover, default: true
+		hoverOpacityIn	: 1,		// hover opacity of li's, default: 1
+		hoverOpacityOut	: .4,		// opacity of li's , default: .5
+		hoverSpeedIn	: 100,		// speed of hover toggle opacity animation in ms, default: 600
+		hoverSpeedOut	: 700,		// speed of hover-out toggle opacity animation in ms, default: 600
+		intv			: 20, 		// rotation interval time in ms, default: 10
+		offset			: 45, 		// offset in circle in degrees, default: 0
+		drag 			: true, 	// requires jquery ui plugin to function, default: false
+		// callbacks
+		onOpenStart	: function(){ $('#log').append('"#'+this.attr('id')+' onOpenStart<br/>'); }, // at start of opening animation
+		onOpenEnd	: function(){ $('#log').append('"#'+this.attr('id')+' onOpenEnd<br/>'); }, // at end of opening animation
+		onCloseStart: function(){ $('#log').append('"#'+this.attr('id')+' onCloseStart<br/>'); }, // at start of closing animation
+		onCloseEnd	: function(){ $('#log').append('"#'+this.attr('id')+' onCloseEnd<br/>'); } // at end of closing animation
 	});
+
 </script>
+
 </body>
 </html>
