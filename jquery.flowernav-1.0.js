@@ -55,7 +55,7 @@ $.fn.flowernav = function( options, callback ) {
 		var $this = $(this);
 
 		if ( callback ) { callback.call($this); }
-		var $button  = $this.find('ul li a:first');
+		var $button  = $this.find('.btn'); // Changed this from "a:first" to '.btn' because "a:first" was only allowing one flower...
         
 		var childcount = $this.find('ul ul li').size();
 		var $childs = $this.find('ul ul li');
