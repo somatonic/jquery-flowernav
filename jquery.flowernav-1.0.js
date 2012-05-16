@@ -2,7 +2,10 @@
  * flowernav jQuery plugin v1.0
  * 
  * Created: 29-03-2011 by Philipp Urlich (soma.urlich.ch)
- * Last updated: 01-04-2011
+ * Last updated: 16-05-2012
+ * Changelog
+ *	- fixed issue with multiple instanced, added .btn class
+ *
  * Changelog from b0.1:
  *	- various new options and callbacks.
  *	- easing for opening and closing animation
@@ -38,6 +41,7 @@ $.fn.flowernav = function( options, callback ) {
 		'intv'				: 30,
 		'offset'			: 0,
 		'drag'				: false,
+		'btnClass'			: '.btn',
 		'onOpenStart'		: function(){},
 		'onOpenEnd'			: function(){},
 		'onCloseStart'		: function(){},
@@ -55,8 +59,9 @@ $.fn.flowernav = function( options, callback ) {
 		var $this = $(this);
 
 		if ( callback ) { callback.call($this); }
-		var $button  = $this.find('ul li a:first');
-        
+		var $button = $this.find(settings.btnClass);
+
+        //alert($this.attr('id'));
 		var childcount = $this.find('ul ul li').size();
 		var $childs = $this.find('ul ul li');
 		var spacing = 360 / childcount;

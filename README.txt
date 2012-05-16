@@ -1,6 +1,6 @@
 jQuery Flower Navigation Plugin v1.0
 
-Last updated: 01-04-2011 by Philipp Urlich
+Last updated: 16-05-2012 by Philipp Urlich
 
 Depends on: jQuery 1.3+, jQuery UI javascript library for if dragging set to true and easing
 
@@ -18,8 +18,8 @@ The HTML Markup:
 
 <nav id="flash">
 <ul>
-	<!-- first level link will be used as button -->
-	<li><a href="#flash" class="my_button">Flash</a>
+	<!-- link used as button by default .btn -->
+	<li><a href="#flash" class="btn my_button">Flash</a>
 		<!-- second level link will be used as childs -->
 		<ul>
 			<li><a href="#"><img src="http://soma.urlich.ch/_media/internet/mdm_th_1.jpg"/></a></li>
@@ -68,6 +68,7 @@ Applying the plugin:
 		offset			: 45, 		// offset in circle in degrees, default: 0
 		drag 			: true, 	// requires jquery ui plugin to function, default: false
 		// callbacks
+		btnClass		: '.btn',
 		onOpenStart	: function(){ $('#log').append('"#'+this.attr('id')+' onOpenStart<br/>'); }, // at start of opening animation
 		onOpenEnd	: function(){ $('#log').append('"#'+this.attr('id')+' onOpenEnd<br/>'); }, // at end of opening animation
 		onCloseStart: function(){ $('#log').append('"#'+this.attr('id')+' onCloseStart<br/>'); }, // at start of closing animation
